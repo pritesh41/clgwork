@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>course</title>
+<link rel="stylesheet" href="firstpage.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar" >
+<div class="nav_tag"><a href="#">Home</a>
+  <input class="search" type="Search Course" name="course" placeholder="Search..." list="input">
+      <button class="go">Go</button>
+
+
+  <datalist class="option" id="input">
+    <option value="HTML">HTML</option>
+    <option value="JAVA">JAVA</option>
+    <option value="CSS">CSS</option>
+    <option value="C">C</option>
+    <option value="PYTHON">PYTHON</option>
+    <option value="C++">C++</option>
+  </datalist>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+  <a class="profile" href="profile.html" >
+    <img class="picture" src="pritesh.jpg" alt=""></a>
+</div>
+
+<!-- Slide Menu Bar -->
+<div class="slide-menu" id="slideMenu">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+  <a href="#">Profile</a>
+  <a href="#">Joined Courses</a>
+  <a href="#">Notes</a>
+  <a href="#">Log-Out</a>
+</div>
+
+<h1>select your courses</h1>
+<p>one time you can join just 2 course.</p>
+<h2><b>There are the Courses</b></h2>
+
+<!-- Content -->
+<div class="content">
+ 
+  
+  <div class="c1">
+       
+
+       <img class="c1img" src="html.png" alt="">
+       <b>This is a HTML full course with NOTES </b>
+       <li>HTML stands for Hyper Text Markup Language.
+      </li>
+      <li>HTML is the standard markup language for creating Web pages.</li>
+      <li>HTML describes the structure of a Web page....</li>
+      <h3>Click on JOIN button to join the course</h3>
+      <button>JOIN NOW</button>
+  </div>
+
+  <div class="c2">
+       
+    <img class="c2img" src="css.png" alt="">
+    
+      
+    <b>This is a CSS full course with NOTES  </b>
+    <li>CSS stands for Cascading Style Sheets
+   </li>
+   <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+   <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once....</li>
+   <h3>Click on JOIN button to join the course</h3>
+   <button>JOIN NOW</button>
+   
+  
+</div>
+</div>
+<div class="content2">
+<div class="c3">
+       
+
+  <img class="c3img" src="js.png" alt="">
+  <b>This is a javascript full course with NOTES </b>
+  <li>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.....</li>
+ <h3>Click on JOIN button to join the course</h3><button>JOIN NOW</button>
+ 
+</div>
+
+<div class="c4">
+       
+
+  <img class="c4img" src="java.png" alt="">
+  <b>This is a JAVA full course with NOTES </b>
+  <li>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.....</li>
+ <h3>Click on JOIN button to join the course</h3><button>JOIN NOW</button>
+ 
+</div>
+</div>
+
+<!-- Menu Button -->
+<div class="menu-btn" onclick="openSlideMenu()">&#9776;</div>
+
+<script>
+function openSlideMenu() {
+  document.getElementById('slideMenu').style.width = '250px';
+  document.getElementsByClassName('content')[0].style.marginLeft = '250px';
+}
+
+function closeSlideMenu() {
+  document.getElementById('slideMenu').style.width = '0';
+  document.getElementsByClassName('content')[0].style.marginLeft = '0';
+}
+</script>
+
+</body>
+</html>
+
+

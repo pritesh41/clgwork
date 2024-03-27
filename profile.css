@@ -1,0 +1,305 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            background-image: url(bdth.jpg);
+        }
+        
+        .head{
+            display: flex;
+            width: fit-content;
+            color: #333;
+        }
+        .head1{
+            width: fit-content;
+            color: #333;
+           
+        }
+        .head2{
+            width: fit-content;
+            color: #333;
+            margin-left: 600px;
+        }
+        .profile-info {
+          background-image: url(pimage.webp);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 25%;
+            margin-top: 0;
+            float: left;
+        }
+        .profile-info p {
+            margin: 10px 0;
+        }
+        .profile-info p span {
+            font-weight: bold;
+        }
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-picture img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .change-picture {
+            text-align: center;
+        }
+        .change-picture input[type="file"] {
+            display: none;
+        }
+        .change-picture label {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link {
+            padding: 0;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .A{
+            display: flex;
+            padding: 20px;
+        }
+        .A a{
+          text-decoration: none;
+          color: black;
+        }
+        .B a{
+          text-decoration: none;
+          color: black;
+        }
+        .A1{
+            text-decoration: none;
+            width: 125px;
+            height: 75px;
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+        }
+        .A2{
+            width: 125px;
+            height: 75px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .B{
+            display: flex;
+            margin-left: 20px;
+        }
+        .B1{
+            width: 125px;
+            height: 75px;
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+        }
+        .B2{
+            width: 125px;
+            height: 75px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 5px;
+        }
+
+       
+        .course{
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 70%;
+            /* display: flex; */
+            float: right;
+            height: 700px;
+        }
+        .course a{
+        height: 20px;
+        margin-left: 40px;
+        float: left;
+        display: block;
+        color: rgb(66, 64, 64);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        }
+        .course a :hover{
+        background-color: #3f1a1a;
+        color: rgb(180, 129, 129);
+      }
+
+      @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.sticky-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.sticky-note {
+  position: relative;
+  background-color: var(--note-color);
+  padding: 20px;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sticky-note.animate-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sticky-note.animate-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.note-content {
+  width: 100%;
+  height: 100px;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out; /* Added color transition */
+}
+.sticky-note:hover .delete-note {
+  display: block;
+}
+.delete-note {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: none;
+}
+
+.delete-note:hover {
+  background-color: #ff4f4f;
+}
+
+.add-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  background-color: #fff;
+  color: #6495ed;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Level popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+
+.L1{
+  width: 100%;
+  background-color: rgb(245, 197, 197);
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+}
